@@ -55,8 +55,8 @@ def show_history():
     with open(history_file, "r") as f:
         history = json.load(f)
         for item in history:
-            files_listbox.insert(END, item[file_path])
-            links_listbox.insert(END, item[download_link])
+            files_listbox.insert(END, item["file_path"])
+            links_listbox.insert(END, item["download_link"])
 
 
 window = Tk()
